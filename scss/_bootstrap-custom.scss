@@ -1,0 +1,91 @@
+// custom variables and override bootstrap variables
+
+$white:                            #fff;
+$black:                            #000;
+$brand-warning:                    #edc301;
+$body-bg: $white;
+
+// Typography
+$font-family-serif:                'Arial', Helvetica, sans-serif;
+$font-family-open-sans:            'Open Sans', 'Arial', Helvetica, sans-serif;
+$font-family-base:                 $font-family-serif;
+$font-size-base:                   15px;
+$font-size-h1:                     36px;
+$font-size-h2:                     26px;
+$headings-font-weight:             300;
+
+// Container Sizes
+$grid-gutter-width:                30px;
+$container-lg:                     1170px;
+$container-large-desktop:          $container-lg + $grid-gutter-width;
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:            $screen-sm-max;
+
+// Navbar
+$navbar-default-bg:                transparent;
+$navbar-height:                    20px;
+$navbar-default-link-color:        #2a2a2a;
+$navbar-default-link-hover-color:  #3377b5;
+$navbar-default-link-active-color: #3377b5;
+$navbar-default-link-hover-bg:     transparent;
+$navbar-default-link-active-bg:    transparent;
+
+// Buttons
+$btn-warning-color:                $white;
+$btn-warning-bg:                   $brand-warning;
+$btn-warning-border:               transparent;
+$btn-border-radius-base:           18px;
+
+// thumbnails
+$thumbnail-padding:                0;
+$thumbnail-bg:                     #f0f0f0;
+$thumbnail-border:                 none;
+$thumbnail-border-radius:          0;
+$thumbnail-caption-color:          #2a2a2a;
+$thumbnail-caption-padding:        21px;
+
+// Dropdowns
+$dropdown-border:                  transparent;
+$dropdown-link-hover-bg:           transparent;
+$dropdown-link-hover-color:        #3377b6;
+$dropdown-link-active-color:       #3377b6;
+$dropdown-link-active-bg:          transparent;
+
+
+$input-border:                     #dfdfdf;
+$input-border-radius:              0;

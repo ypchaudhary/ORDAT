@@ -1,0 +1,272 @@
+.footer-t {
+  background: #3377b4;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+  padding: 41px 0 34px;
+
+  @include media('print') {
+    padding: 0;
+  }
+
+  @include media('<desktop') {
+    padding: 17px 0;
+  }
+
+  .col-sm-3 {
+    @include media('print') {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+
+  .footer-link {
+    @extend %listreset;
+    overflow: hidden;
+    margin: 0 0 12px;
+
+    @include media('<=tablet') {
+      margin: 0 0 30px;
+    }
+
+    li {
+      margin: 0 0 10px;
+      padding: 0 0 0 21px;
+      position: relative;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: none;
+        color: #2a2a2a;
+      }
+
+      &:focus {
+        text-decoration: none;
+        outline: none;
+      }
+    }
+
+    [class^="icon-"] {
+      font-size: 11px;
+      margin: 0 10px 0 0;
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+  }
+
+  .social-link {
+    margin: 0 -4px;
+
+    @include media('<desktop') {
+      padding: 0;
+    }
+
+    @include media('<=tablet') {
+      margin: 0 0 30px;
+    }
+
+    [class^="icon-"] {
+      color: $white;
+    }
+
+    li {
+      float: left;
+      margin-right: 14px;
+    }
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+
+  [href^="tel:"] {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 300;
+    color: $white;
+
+    @include media('<=desktop') {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  .icon-phone {
+    font-size: 23px;
+    margin: 0 8px 0 0;
+  }
+}
+
+.email-form {
+  @include media('<=tablet') {
+    margin: 0 0 30px;
+  }
+  .row-holder {
+    max-width: 241px;
+    position: relative;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    background: transparent;
+    font-size: 16px;
+    line-height: 21px;
+    font-style: italic;
+    border: 1px solid #6699c7;
+    padding: 7px 27px 7px 10px;
+    height: 37px;
+    width: 100%;
+    box-shadow: none;
+
+    @include placeholder {
+      color: $white;
+    }
+
+    @include media('<=desktop') {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  button[type="submit"] {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    border-radius: 0;
+    background: transparent;
+    margin: 2px 0 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 19px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.logotype-holder-f {
+  padding: 28px 0 30px;
+
+  @include media('<phone') {
+    padding: 30px 0 0;
+  }
+
+  .columns {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .columns-holder {
+    display: table-row;
+  }
+
+  .column {
+    display: table-cell;
+    vertical-align: middle;
+
+    @include media('<desktop') {
+      padding: 0 14px;
+    }
+
+    @include media('<phone') {
+      text-align: center;
+      display: block;
+      margin: 0 0 30px;
+    }
+  }
+
+  a {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  img {
+      max-width: 100%;
+  }
+}
+
+.footer-b {
+  background: #f0f0f0;
+  padding: 16px 0 10px;
+  position: relative;
+
+  .footer-logo {
+    display:inline-block;
+    vertical-align:middle;
+    margin: 0 7px 0 18px;
+
+    img {
+      max-width: 100px;
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+    line-height: 19px;
+    color: #2b2b2b;
+    display:inline-block;
+    vertical-align:middle;
+
+    p {
+      margin: 0;
+    }
+
+    a{
+      color: #2b2b2b;
+    }
+  }
+
+  .back-to-top {
+    background: #0098a1;
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    right: 15.8%;
+    width: 35px;
+    height: 35px;
+    padding: 8px 0;
+    border-radius: 18px 18px 0 0;
+    text-align: center;
+
+    @include media('<tablet') {
+      right: 15px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background: darken(#0098a1, 15%);
+    }
+
+    &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+}
